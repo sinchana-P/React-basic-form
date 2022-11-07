@@ -4,14 +4,15 @@
 body {
     margin: 0;
     padding: 2rem;
-    background-color: rgba(236, 139, 236, 0.394);
+    background-color: rgb(10, 9, 10);
 }
 
 form {
     padding: 50px; 
-    background-color: rgba(218, 118, 218, 0.394);
+    background-color: rgba(125, 119, 125, 0.281);
     width: max-content;
     margin: auto;
+    color: rgba(255, 255, 255, 0.51);
 }
 
 input{
@@ -67,3 +68,4 @@ textarea {
     font-style: italic;
     text-transform: uppercase;
 }
+
