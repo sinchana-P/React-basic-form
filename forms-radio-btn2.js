@@ -2,7 +2,7 @@
 
 function Form() {
     const [formData, setFormData] = React.useState(
-        {firstName: "", lastName: "", email: "", comments: "", isFriendly : true, employment:"" }
+        {firstName: "", lastName: "", email: "", comments: "", isFriendly : false, employment:"" }
     )
     
     function handleChange(event) {
@@ -17,7 +17,16 @@ function Form() {
     }
 
     console.log(formData.firstName, formData.lastName, formData.email, formData.comments)
-    console.log(formData.comments, formData.employment)
+    console.log(formData.comments, formData.employment, formData.isFriendly)
+
+    function display() {
+        confirm(`Your details : 
+                     Full Name: ${formData.firstName} ${formData.lastName} 
+                     email: ${formData.email}  
+                     Comments : ${formData.comments}
+                     Job-req : ${formData.isFriendly ? "YES":"NO"}
+                     Employment: ${formData.employment}  `)
+    }
     
     return (
         <form>
@@ -57,7 +66,7 @@ function Form() {
                 checked={formData.isFriendly}
                 id = "isFriendly"  //for label               
             />
-            <label htmlFor="isFriendly">Are you friendly ?</label>
+            <label htmlFor="isFriendly">Searching for Job ?</label>
             <br />
             <br />
 
@@ -98,7 +107,11 @@ function Form() {
                 />
                 <label htmlFor="full-time">Full-time</label>
                 <br />
+
             </fieldset>
+
+            <button onClick={display}>Submit</button>
+
 
         </form>
 
