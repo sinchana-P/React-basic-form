@@ -40,7 +40,7 @@ function Form() {
 Full Name : ${formData.firstName} ${formData.lastName} 
 Email : ${formData.email}  
 Comments : ${formData.comments}
-Job-req ? : ${formData.isFriendly ? "Yes":"No"}
+Job-req ? : ${formData.isJob ? "Yes":"No"}
 Employment : ${formData.employment}  
 State : ${formData.state}`)
 
