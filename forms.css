@@ -25,8 +25,12 @@ input{
     text-indent: 10px;
     padding: 10px;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
+}
+
+input[type="email"] {
+    text-transform: lowercase;
 }
 
 input#isFriendly {
@@ -66,6 +70,35 @@ textarea {
     height: 250px;
     font-size: 20px;
     font-style: italic;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
+select {
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    text-indent: 16px;
+    font-size: 24px;
+    border-radius: 18px;
+}
+
+select:hover{
+    color: white;
+    background-color: black;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    text-indent:center;
+    font-size: 24px;
+    border-radius: 18px;
+    display: block;
+    margin-left: auto; 
+    border: none;  
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
